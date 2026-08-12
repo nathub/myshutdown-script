@@ -1,0 +1,7 @@
+#!/usr/bin/lua
+minutes = tonumber(arg[1])
+if not arg[1] or not minutes then
+    print("myshutdown requires number of minutes!")
+else
+    os.execute("sudo shutdown -hP " .. arg[1])
+end
