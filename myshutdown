@@ -5,3 +5,6 @@ if not arg[1] or not minutes then
 else
     os.execute("sudo shutdown -hP " .. arg[1])
 end
+-- You cat fetch the name of the current init system using: 
+-- "head --lines=1 /proc/1/status"
+-- Consider writing this to accept many init systems', and their varying shutdown command syntax. Also the BSDs.
